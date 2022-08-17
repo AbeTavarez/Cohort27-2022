@@ -1,0 +1,36 @@
+body {
+    text-align:center;
+}
+
+ul {
+    list-style: inside;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    background-color: #eee;
+    margin-left: 50px;
+}
+
+#special {
+    color: purple;
+}
+
+.also-special {
+    color: aqua;
+}
+
+a {
+    font-size: 22px;
+    background-color: rebeccapurple;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+a:hover{
+    font-size: 25px;
+}

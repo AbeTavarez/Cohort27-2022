@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body {
     text-align:center;
 }
@@ -27,9 +33,15 @@ a {
     font-size: 22px;
     background-color: rebeccapurple;
     color: #fff;
-    padding: 15px;
     border-radius: 4px;
     text-decoration: none;
+    padding: 15px;
+    
+}
+nav {
+    /* background-color: red; */
+    /* height: 100px; */
+    margin-bottom: 50px;
 }
 a:hover{
     font-size: 25px;

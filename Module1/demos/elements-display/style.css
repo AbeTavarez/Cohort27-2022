@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+* {
+   
+}
+
+div {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Rubik Iso', cursive;
+}
+
+.first {
+    background-color: yellow;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: -3px;
+}
+.second {
+    background-color: orange;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: -1.5px;
+}
+.third {
+    background-color: red;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: -2px;
+}
+
+.c2-first {
+    background-color: green;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: -3px;
+}
+.c2-second {
+    background-color: #3498db;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: -2px;
+}
+.c2-third {
+    background-color: purple;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: -2px;
+}
+
+p {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize
+}
+

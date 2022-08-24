@@ -1,0 +1,28 @@
+header{
+    background-color: lightblue;
+    /* position: fixed;
+    bottom: 5px;
+    right: 5px */
+
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+nav {
+    background-color: rebeccapurple;
+    /* width: 150px; */
+    position: relative;
+}
+
+ul {
+    display: none;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+section {
+    /* margin-top: 80px; */
+}

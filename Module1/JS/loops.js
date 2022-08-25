@@ -16,11 +16,11 @@ let user = 'abraham'
 
 // let total = 0 //global variable
 
-for (let i = 0; i < 10; i += 3) {
-    console.log(i);
-    total += i
-    console.log(`the total is: ${total}`)
-}
+// for (let i = 0; i < 10; i += 3) {
+//     console.log(i);
+//     total += i
+//     console.log(`the total is: ${total}`)
+// }
 
 
 
@@ -66,8 +66,8 @@ for (let i = 0; i < 10; i += 3) {
 //     console.log(`${i}`);
 // }
 
-const word = 'app le'
-let reversed = ''
+// const word = 'app le'
+// let reversed = ''
 
 // [4] o
 // [3] l
@@ -85,6 +85,61 @@ let reversed = ''
 
 // console.log(reversed);
 
-for (char of word){
-    console.log(char);
-}
+
+// ===========  WHILE LOOPS ================= //
+
+// initialize, condition, incrementor
+
+// let count = 0
+// let isNotDoneCounting = false
+
+// while(isNotDoneCounting || count < 10){
+//     console.log(`The count is: ${count}`)
+
+//     if (count === 5){
+//         isNotDoneCounting = false
+//     }
+//     count++
+// }
+
+// let lives = 3
+// let time = 10
+
+// while(lives > 0 && time > 0){
+//     console.log('Playing the game....')
+//     console.log(`Time left ${time} and Lives left: ${lives}`);
+
+//     if (lives === 0) {
+//         console.log('Game Over');
+//     }
+
+//     if (time % 2 === 0){
+//         console.log('You Lose one live!');
+//         lives--
+//     } 
+    
+//     time--
+
+// }
+
+// console.log('Go to Main Menu!');
+
+
+let message = "12673.526"
+
+// === For Loop
+// for (let i = 0; i < message.length; i++){
+//     console.log(message[i])
+// }
+
+// ==== For Of Loop
+// for (value of message){
+//     console.log(value);
+// }
+
+// Do While Loop - they run at least once!
+let i = 0
+do {
+    console.log('Do while');
+    i--
+} while(i > 0)

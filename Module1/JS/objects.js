@@ -97,4 +97,70 @@ const teams = {
 
 const teamTwo = 3
 
-console.log(teams[1]);
+// console.log(teams[1]);
+
+
+const coder = {
+    name: 'Anna',
+    company: 'Google',
+    joinedCompany: 2021,
+    languages: ['C', 'C++', 'C#', 'Ruby'],
+    greeting: function(name, message = 'World'){
+        console.log(`Hello, ${name} ${message}`);
+    }
+}
+
+// Keys:Values
+// Properties
+// Method
+
+coder.greeting('Alex', 'everyone!')
+coder.greeting('Alex')
+coder.name = 'Eli'
+
+console.log(coder);
+
+delete coder.company
+
+console.log(coder.company);
+
+
+// Array
+const playlist = [
+    {
+        songName: 'My song 1',
+        artist: 'Mike',
+        genre: 'Hip Hop',
+        songLength: 120,
+        writers: ['Yishaq', 'Jude', 'Deja']
+    },
+    {
+        songName: 'My song2',
+        artist: 'Mike',
+        genre: 'Hip Hop',
+        songLength: 120,
+        writers: ['Yishaq', 'Jude', 'Deja']
+    }
+]
+
+
+const song3 = {
+    songName: 'My song3',
+    artist: 'Mike',
+    genre: 'Hip Hop',
+    songLength: 120,
+    writers: ['Yishaq', 'Jude', 'Deja']
+}
+const song4 = {
+    songName: 'My song4',
+    artist: 'John',
+    genre: 'Classic',
+    songLength: 90,
+    writers: ['Ronnie', 'Mo', 'Nelia']
+}
+
+// push objects to playlist array
+playlist.push(song3)
+playlist.push(song4)
+
+console.log(playlist[0].artist);

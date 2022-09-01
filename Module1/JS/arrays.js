@@ -89,19 +89,19 @@ const multiplyByTwo = (num) => {
 
 
 
-const evenNumbers = []
-const oddNumbers = []
+// const evenNumbers = []
+// const oddNumbers = []
 
-for (let i = 0; i < numArr.length; i++){
-    if (numArr[i] % 2 === 0){
-        evenNumbers.push(numArr[i])
-    } else {
-        oddNumbers.push(numArr[i])
-    }
-}
+// for (let i = 0; i < numArr.length; i++){
+//     if (numArr[i] % 2 === 0){
+//         evenNumbers.push(numArr[i])
+//     } else {
+//         oddNumbers.push(numArr[i])
+//     }
+// }
 
-console.log(evenNumbers);
-console.log(oddNumbers);
+// console.log(evenNumbers);
+// console.log(oddNumbers);
 
 
 const latestShows = [ 'Caddyshack', 'Interstellar', 'Scarface', 'Trading Places' ]
@@ -132,5 +132,5 @@ const newArr = increaseByTwo.map((num) => {
     return num + 2
 })
 
-console.log(increaseByTwo);
-console.log(newArr);
+// console.log(increaseByTwo);
+// console.log(newArr);

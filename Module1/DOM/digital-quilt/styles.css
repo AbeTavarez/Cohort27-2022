@@ -1,0 +1,13 @@
+body {
+    /* display: flex; */
+}
+
+
+.square {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(157, 78, 175);
+    display: inline-block;
+    color: #fff;
+    font-size: 10px;
+}

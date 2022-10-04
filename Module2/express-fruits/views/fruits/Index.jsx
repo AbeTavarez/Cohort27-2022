@@ -6,6 +6,7 @@ class Index extends React.Component {
     return (
       <div>
         <h1>All Fruits</h1>
+        <a href='/fruits/new'>Create New Fruit</a>
 
         <ul>
           {fruits.map((fruit, idx) => (

@@ -3,6 +3,7 @@ const React = require("react");
 class Index extends React.Component {
   render() {
     const {fruits} = this.props
+
     return (
       <div style={styles.container} className='container'>
         
@@ -17,6 +18,11 @@ class Index extends React.Component {
               {fruit.readyToEat
                 ? `It is ready to eat`
                 : `It is not ready to eat`}
+
+                <form action={`/fruits/${fruit._id}?_method=delete`} method='post'>
+                  <input type='submit' value='Delete' />
+                </form>
+                <a href={`/fruits/${fruit._id}/edit`}>Edit this Fruit</a>
             </li>
           ))}
         </ul>

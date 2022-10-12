@@ -7,7 +7,7 @@ const router = express.Router()
 router.get('/', async (req, res) => {
     try {
         const blogs = await BlogModel.find({})
-        res.send(blogs)
+        res.render('Blogs/Blogs', {blogs: blogs})
     } catch (error) {
         console.log(error);
         res.status(403).send('Cannot get')

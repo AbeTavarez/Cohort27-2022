@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const blog = await BlogModel.findById(req.params.id)
-        res.send(blog)
+        res.render('Blogs/ShowBlog', {blog: blog})
     } catch (error) {
         console.log(error);
         res.status(403).send('Cannot get')

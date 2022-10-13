@@ -1,5 +1,5 @@
 const React = require("react");
-const Navbar = require('../components/NavBar')
+const NavBar = require('../components/Navbar')
 
 class HomePage extends React.Component {
   render() {
@@ -8,9 +8,10 @@ class HomePage extends React.Component {
         <head>
           <link rel="stylesheet" href="/CSS/app.css" />
         </head>
-        <Navbar/>
 
-        <section >
+        <NavBar />
+
+        <section>
           <h1>Blog App</h1>
 
           <img src="images/blog.png" style={styles.headerImg} />
@@ -27,22 +28,23 @@ class HomePage extends React.Component {
           <h1>Bio</h1>
           <div style={styles.intro}>
             <img src="/images/me.png" style={styles.me} />
-           <div>
-           <h2>Developer</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Necessitatibus odit qui enim tempora rerum neque, repellendus
-              debitis. Dicta modi expedita aliquam officiis neque laudantium
-              asperiores at perferendis maiores, eos iure. Lorem ipsum, dolor
-              sit amet consectetur adipisicing elit. Necessitatibus odit qui
-              enim tempora rerum neque, repellendus debitis. Dicta modi expedita
-              aliquam officiis neque laudantium asperiores at perferendis
-              maiores, eos iure. Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Necessitatibus odit qui enim tempora rerum
-              neque, repellendus debitis. Dicta modi expedita aliquam officiis
-              neque laudantium asperiores at perferendis maiores, eos iure.
-            </p>
-           </div>
+            <div>
+              <h2>Developer</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Necessitatibus odit qui enim tempora rerum neque, repellendus
+                debitis. Dicta modi expedita aliquam officiis neque laudantium
+                asperiores at perferendis maiores, eos iure. Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit. Necessitatibus odit qui
+                enim tempora rerum neque, repellendus debitis. Dicta modi
+                expedita aliquam officiis neque laudantium asperiores at
+                perferendis maiores, eos iure. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Necessitatibus odit qui enim
+                tempora rerum neque, repellendus debitis. Dicta modi expedita
+                aliquam officiis neque laudantium asperiores at perferendis
+                maiores, eos iure.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -55,11 +57,11 @@ class HomePage extends React.Component {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
                 nisi maiores nulla saepe, dolore ex atque assumenda obcaecati
                 consequuntur quo possimus maxime exercitationem tempore error
-                architecto. Dolorem consequuntur cumque unde!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
-                nisi maiores nulla saepe, dolore ex atque assumenda obcaecati
-                consequuntur quo possimus maxime exercitationem tempore error
-                architecto. Dolorem consequuntur cumque unde!
+                architecto. Dolorem consequuntur cumque unde! Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit. Culpa nisi maiores nulla
+                saepe, dolore ex atque assumenda obcaecati consequuntur quo
+                possimus maxime exercitationem tempore error architecto. Dolorem
+                consequuntur cumque unde!
               </p>
               <span>Author: Bill</span>
             </div>

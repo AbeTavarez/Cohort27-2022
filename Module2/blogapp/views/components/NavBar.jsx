@@ -1,36 +1,26 @@
-const React = require("react");
+const React = require('react')
 
-class NavBar extends React.Component {
-  render() {
-    return (
-      <div>
-        <head>
-          <meta charset="UTF-8" />
-          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <title>Blog App</title>
-        </head>
-        <nav style={styles.nav}>
-          <a href='/'>HOME</a>
-          <a href='/blog'>BLOGS</a>
-          <div>
-            <a href='/login'>Login</a>
-          </div>
-        </nav>
-      </div>
-    );
-  }
+
+class Navbar extends React.Component {
+    render() {
+        return(
+            <nav style={styles.container}>
+                <a href='/'>Home</a>
+                <a href='/blog'>Blogs</a>
+                <a href='/blog/new'>Create New Blog</a>
+                <a href='/signin'>Signin/up</a>
+            </nav>
+        )
+    }
 }
 
 const styles = {
-  nav: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-};
+    container : {
+        display:"flex",
+        justifyContent: 'space-between',
+        background: 'rgba(193, 235, 187, 0.9)'
+    }
+}
 
-module.exports = NavBar;
+
+module.exports = Navbar

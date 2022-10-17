@@ -1,9 +1,10 @@
 const React = require("react");
-const NavBar = require('../components/Navbar')
+const NavBar = require("../components/Navbar");
 
 class Blogs extends React.Component {
   render() {
-    const { blogs } = this.props;
+    const { blogs, loggedInUser } = this.props;
+    console.log(loggedInUser);
     return (
       <div>
         <head>
@@ -11,7 +12,7 @@ class Blogs extends React.Component {
         </head>
 
         <NavBar />
-        
+
         <h1>Blogs</h1>
 
         <section style={styles.container}>
@@ -26,10 +27,11 @@ class Blogs extends React.Component {
               </div>
               <h6>Written by: {blog.author}</h6>
 
-              <div>
-                <a href={`/blog/${blog._id}/edit`}>Edit</a>
-              </div>
-
+              {blog.author === loggedInUser ? (
+                <div>
+                  <a href={`/blog/${blog._id}/edit`}>Edit</a>
+                </div>
+              ) : null}
             </div>
           ))}
         </section>

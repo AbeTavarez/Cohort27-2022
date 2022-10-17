@@ -14,7 +14,7 @@ class CreateBlog extends React.Component {
         <textarea  name="body" placeholder="body" rows="24" cols="50" required /><br />
 
        
-        <input type="text" name="author" placeholder="author" required/><br />
+        {/* <input type="text" name="author" placeholder="author" required/><br /> */}
 
         <div>
         <label>sponsored?</label>

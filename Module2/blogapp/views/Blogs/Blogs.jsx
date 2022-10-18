@@ -4,14 +4,13 @@ const NavBar = require("../components/Navbar");
 class Blogs extends React.Component {
   render() {
     const { blogs, loggedInUser } = this.props;
-    console.log(loggedInUser);
     return (
       <div>
         <head>
           <link rel="stylesheet" href="/CSS/main.css" />
         </head>
 
-        <NavBar />
+        <NavBar loggedInUser={loggedInUser}/>
 
         <h1>Blogs</h1>
 

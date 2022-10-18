@@ -15,6 +15,7 @@ router.use((req, res, next) => {
 
 // GET: All Blogs
 router.get("/",  async (req, res) => {
+  console.log(req.session);
   try {
     const blogs = await BlogModel.find({});
     res.render("Blogs/Blogs", { blogs: blogs, loggedInUser: req.session.username });

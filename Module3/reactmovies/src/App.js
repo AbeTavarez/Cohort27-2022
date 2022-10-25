@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MovieDisplay from "./components/MovieDisplay";
 import Form from "./components/Form";
 import "./App.css";
@@ -6,6 +6,11 @@ import "./App.css";
 function App() {
   // state to hold the movie data
   const [movie, setMovie] = useState(null);
+
+  // runs as soon as the App component gets render
+  useEffect(() => {
+    getMovie('toy story')
+  }, [])
 
   // Function to fetch movie data
   const getMovie = async (searchTerm) => {
@@ -25,7 +30,7 @@ function App() {
     <div className="App">
       <h1>React Movies</h1>
       <Form movieSearch={getMovie} />
-      <MovieDisplay movie={movie}/>
+      { movie && <MovieDisplay movie={movie}/>}
     </div>
   );
 }

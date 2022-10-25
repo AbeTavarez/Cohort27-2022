@@ -13,6 +13,7 @@ const Form = ( props) => {
     const handleSubmit = (e) => {
         e.preventDefault() // stop the form from refreshing the page
         movieSearch(formData.searchTerm)
+        setFormData({searchTerm: ''})
     }
     
   return (

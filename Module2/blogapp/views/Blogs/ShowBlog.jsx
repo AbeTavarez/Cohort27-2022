@@ -5,6 +5,7 @@ class ShowBlog extends React.Component {
         const {blog} = this.props
         return(
             <div>
+                
                 <h1>{blog.title}</h1>
 
                 <p>{blog.body}</p>

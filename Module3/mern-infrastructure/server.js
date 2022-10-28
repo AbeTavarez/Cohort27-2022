@@ -2,6 +2,8 @@ const express = require('express')
 const morgan = require('morgan')
 const favicon = require('serve-favicon')
 const path = require('path')
+require('dotenv').config()
+require('./config/db')
 
 const app = express()
 const PORT = process.env.PORT || 3001;

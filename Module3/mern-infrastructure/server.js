@@ -15,12 +15,7 @@ app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')))
 app.use(express.static(path.join(__dirname, 'build')))
 
 // API Routes
-app.post('/orders', (req, res) => {
-    //
-})
-app.post('/orders/new', (req, res) => {
-    //create the new order in the db
-})
+app.use('/api/users', require('./routes/api/users'))
 
 
 // Catch All to serve the production app

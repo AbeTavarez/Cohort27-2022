@@ -1,6 +1,8 @@
 import { Component } from "react";
 import {signUp} from '../../utils/users-service';
 
+//? src/components/SignUpForm/SignUpForm.jsx <--> users-service.js <--> users-api.js <-Internet-> server.js (Express)
+
 export default class SignUpForm extends Component {
   // state is always an object with a property for each "piece" of state
   state = {
@@ -24,6 +26,7 @@ export default class SignUpForm extends Component {
       const { name, email, password} = this.state;
       const formData = { name, email, password}
       const user = await signUp(formData)
+      this.props.setUser(user);
       
     } catch (error) {
       this.setState({ error: "Sign Up Failed - Try Again!" });

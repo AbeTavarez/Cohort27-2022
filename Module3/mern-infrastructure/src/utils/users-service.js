@@ -30,6 +30,12 @@ export function getUser() {
   return token ? JSON.parse(atob(token.split(".")[1])).user : null;
 }
 
-export const logOut = () => {
+export function logOut() {
   localStorage.removeItem('token')
+}
+
+export async function login(credentials) {
+  const token = await userAPI.login(credentials)
+  localStorage.setItem("token", token);
+  return getUser();
 }

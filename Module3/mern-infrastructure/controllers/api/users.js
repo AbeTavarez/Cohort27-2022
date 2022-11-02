@@ -2,6 +2,7 @@
 
 const User = require('../../models/user');
 const jwt = require('jsonwebtoken')
+const bcrypt = require('bcrypt')
 
 
 async function create(req, res) {
@@ -20,6 +21,30 @@ async function create(req, res) {
       }
   }
 
+  async function logIn(req, res) {
+    try {
+      // find user on database
+      const user = await User.findOne({email: req.body.email})
+
+      if (!user){
+        // if there is NO user found
+        return res.status(400).json({msg: 'Invalid email or password'})
+      }
+
+      // use bcrypt to compare passwords
+      const match = await bcrypt.compare(req.body.password, user.password)
+
+      if (match){
+        // if passwords match send token
+        const token = createJWT(user)
+        res.json(token)
+      }
+      
+    } catch (err) {
+      res.status(400).json('Bad Credentials');
+    }
+  }
+
   function createJWT(user) {
     return jwt.sign(
       // data payload
@@ -30,5 +55,6 @@ async function create(req, res) {
   }
 
   module.exports = {
-    create
+    create,
+    logIn
   };

@@ -1,9 +1,9 @@
 //? Organize functions used to sign-up, log in, log out, etc.
 
-import * as userAPI from "./users-api";
+import * as usersAPI from "./users-api";
 
 export const signUp = async (userData) => {
-  const token = await userAPI.signUp(userData);
+  const token = await usersAPI.signUp(userData);
   // Persist the "token"
   localStorage.setItem("token", token);
   return getUser();
@@ -35,7 +35,15 @@ export function logOut() {
 }
 
 export async function login(credentials) {
-  const token = await userAPI.login(credentials)
+  const token = await usersAPI.login(credentials)
   localStorage.setItem("token", token);
   return getUser();
+}
+
+export function checkToken() {
+  // Just so that you don't forget how to use .then
+  return usersAPI.checkToken()
+    // checkToken returns a string, but let's
+    // make it a Date object for more flexibility
+    .then(dateStr => new Date(dateStr));
 }
